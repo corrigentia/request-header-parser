@@ -31,11 +31,11 @@ router.get('/api/whoami/', function(req, res, next) {
     res.json({
         ipaddress: ipaddress,
         language: language,
-        software: software
+        software: software,
         //UA: UA//,
-        // ip2: ip2,
-        // ip: ip,
-        // host: host,
+        ip2: ip2,
+        ip: ip,
+        host: host//,
         // userAgent: userAgent
     });
 });
