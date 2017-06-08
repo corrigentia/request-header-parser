@@ -4,6 +4,8 @@ var router = express.Router();
 // var UA = require('express-useragent').os;
 var useragent = require('useragent');
 
+var address = require('address');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
@@ -13,6 +15,7 @@ router.get('/', function(req, res, next) {
 router.get('/api/whoami/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
     'use strict';
+    var ipv4 = address.ip();
     var ipaddress = req.ip;
     var language = req.acceptsLanguages()[0];
     // var software = req.get('User-Agent');
@@ -35,7 +38,8 @@ router.get('/api/whoami/', function(req, res, next) {
         //UA: UA//,
         ip2: ip2,
         ip: ip,
-        host: host//,
+        host: host,
+        ipv4: ipv4
         // userAgent: userAgent
     });
 });
