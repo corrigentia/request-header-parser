@@ -16,7 +16,7 @@
     "debug": "^4.1.1",
     "express": "^4.16.4",
     "express-useragent": "^1.0.7",
-    "jade": "~1.11.0",
+    "pug": "latest",
     "uglify-js": ">=2.6.0",
     "clean-css": ">=4.1.11",
     "morgan": ">=1.9.1",
